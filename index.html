@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Vieira - Portfólio</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/js/index.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class='bx bxs-parking'></i>
+                <div class="logo-name">Pedro Vieira</div>
+            </div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                </a>
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#home">
+                    <i class='bx bx-home' ></i>
+                    <span class="links-name">Início</span>
+                </a>
+                <span class="tooltip">Início</span>
+            </li>
+            <li>
+                <a href="#sobre">
+                    <i class='bx bx-user' ></i>
+                    <span class="links-name">Sobre mim</span>
+                </a>
+                <span class="tooltip">Sobre mim</span>
+            </li>
+            <li>
+                <a href="#projetos">
+                    <i class='bx bx-award'></i>
+                    <span class="links-name">Projetos</span>
+                </a>
+                <span class="tooltip">Projetos</span> 
+            </li>
+            <li>
+                <a href="#contact">
+                    <i class='bx bx-message-dots' ></i>
+                    <span class="links-name">Contate-me</span>
+                </a>
+                <span class="tooltip">Contate-me</span>
+            </li>
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile-details">
+                    <img src="/assets/img/IMG_20210224_155426_794.jpg" alt="">
+                    <div class="name-job">
+                        <div class="name">Pedro Henrique V.</div>
+                        <div class="job">Web Designer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+                <ul class="flex-social">
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/pedrovs3_/">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                        <span class="tooltip">Instagram</span>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pedrohenrique.vieira.54540/">
+                            <i class='bx bxl-facebook' ></i>
+                        </a>
+                        <span class="tooltip">Facebook</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="home" class="home-content main-bg section">
+        <div class="main-content text">
+            <div class="grid">
+                <div>
+                    <h1 class="rubber-band">
+                        <span class="rubber-letter"><</span><span class="rubber-letter">P</span><span class="rubber-letter">e</span><span class="rubber-letter">d</span><span class="rubber-letter">r</span><span class="rubber-letter">o</span>     <span class="rubber-letter">V</span><span class="rubber-letter">i</span><span class="rubber-letter">e</span><span class="rubber-letter">i</span><span class="rubber-letter">r</span><span class="rubber-letter">a</span><span class="rubber-letter">></span>
+                    </h1>
+                    <p>Desenvolvedor web e futuro desenvolvedor mobile</p>
+                </div>
+                 <div>
+                    <img style="border-radius: 5rem;" 
+                class="img-formated" src="/assets/img/Designer _Flatline.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="secondary-bg">
+        <div class="main-content">
+            <div class="flex">
+                <div class="sobre">
+                    <h2>Sobre mim:</h2>
+                    <p>Meu nome é Pedro Henrique Vieira Silva, tenho 16 anos, comecei programando em Python com 14 anos, após a conclusao decidi conhecer o desenvolvimento web iniciando meus estudos pela Udemy</p>
+                </div>
+                <div class="flex2">
+                    <H2>Cursos:</H2>
+                    <div class="grid-cursos">
+                    <p>2x Python 3</p> 
+                    <p>[80horas no total]</p> 
+                    <p>Html5 e CSS3</p> 
+                    <p>[Incompleto]</p>
+                    <p>Javascript</p> 
+                    <p>[Incompleto]</p>
+                    <p>Flutter</p> 
+                    <p>[Não iniciado]</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projetos" class="alternative-bg section">
+        <div class="central main-content">
+            <h2>Projetos:</h2>
+                <ul class="grid-projects list pseudo">
+                    <li class="">
+                        <button onclick="window.open('https://awesome-lewin-6a9975.netlify.app/')"><p>Projeto 1</p></button>
+                    </li>
+                    <li>
+                        <button onclick="window.open('https://trabalho-1ano-eixo.netlify.app/')"><p>Projeto 2</p></button>
+                    </li>
+                </ul>
+                <div class="wraper">
+                    <div class="slide"></div>
+                </div>
+        </div>
+    </section>
+    <section id="contact" class="invert-bg section">
+        <Div class="main-content" >
+            <div class="contact-form">
+                <legend><h3>Contate-me 😉</h3></legend>
+                <form class="form-grid" autocomplete="off" method="POST" data-netlify="true"">
+                    <div class="form-group">
+                        <input type="text" name="nome" id="Nome" placeholder="Nome">
+                        <div class="underline"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="Email" placeholder="Email">
+                        <div class="underline"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="titulo" id="title" placeholder="Titulo da mensagem">
+                        <div class="underline"></div>
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea name="mensagem" id="Mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        <div class="underline-text"></div>
+                    </div>
+                    <div class="form-group">
+                        <button class="button" type="submit">Enviar</button>
+                        <div class="button-top"></div>
+                        <div class="underline-button"></div>
+                    </div>
+                </form>
+            </div>
+        </Div>
+    </section>
+
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>
