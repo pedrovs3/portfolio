@@ -701,6 +701,7 @@ html::-webkit-scrollbar-thumb{
     
     html {
         width: 295.5%;
+        zoom: 0%;
     }
 
     .grid, .grid-projects{
