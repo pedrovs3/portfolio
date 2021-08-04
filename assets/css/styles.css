@@ -683,11 +683,35 @@ html::-webkit-scrollbar-thumb{
 
 
 @media (max-width: 800px){
-    html{
-        width: 100%;
+    h1 {
+        font-size: 4rem; 
     }
     
-    .grid{
+    h2{
+        font-size: 3.5rem;
+    }
+    
+    h3{
+        font-size: 3rem;
+    }
+    
+    
+    p{
+        font-size: 2rem;
+        font-family: 'Kanit', sans-serif !important;
+    }
+    
+    a{
+        font-size: 2rem;
+        text-decoration: none;
+    }
+    
+    html {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .grid, .grid-projects, .grid-cursos{
         grid-template-columns: 1fr;
     }
 
@@ -699,16 +723,28 @@ html::-webkit-scrollbar-thumb{
         max-width: 50rem;
     }
 
+    .img-formated{
+        width: auto;
+    }
+
+    .flex{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .slide{
+        display: none;
+    }
+
+    .form-group button{
+        width: auto;
+    }
+
     .section{
-        width: 125rem; 
-        overflow: hidden;
+        width: 100%;
     }
 
-    .secondary-bg{
-        width: 125rem;
-    }
-
-    .main-content{
-        width:100rem ;
+    .main-bg{
+        width: 100%;
     }
 }
