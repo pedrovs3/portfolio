@@ -798,7 +798,6 @@ html::-webkit-scrollbar-thumb{
         background-color: var(--bg-color);
         color: var(--white-text);
     }
-
     .main-content{
         width: 100%; 
         max-width: none;
