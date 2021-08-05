@@ -20,10 +20,10 @@ body{
     --bg-color: #121212;
     --secondary-color:#181818;
     --grey:#424242;
-    --blue-color: #00FFFF;
+    --blue-color: #F2543C;/*00FFFF EC4F39*/
     --white-text: rgb(238, 238, 238);
     --green-color:#CCFF66;
-    --orange:#FFCC00;
+    --orange:#ff5522;/*FFCC00*/
     --red:#FF0000;
     --gap: 3rem;
 }
@@ -311,14 +311,14 @@ html::-webkit-scrollbar-thumb{
 }
 
 .main-bg{
-    background:url(/assets/img/Scattered-Forcefields.svg);
+    background:url(/assets/img/bg-test.jpg);
     background-size: cover;
     background-position: center center;
     color: var(--white-text);
 }
 
 .invert-bg{
-    background: url(/assets/img/invert-bg.svg);
+    background: url(/assets/img/bg-test2.jpg);
     background-size: cover;
     background-position: center center;
     color: var(--white-text);
@@ -417,9 +417,9 @@ html::-webkit-scrollbar-thumb{
     border: 1px solid rgba(83, 83, 83, 0.808);
     border-radius: 15px;
     transform: translateY(-10px);
-    box-shadow: 0 7px 0 -2px #00FFFF,
-    0 15px 0 -4px #CCFF66,
-    0 16px 10px -3px #39a2db;
+    box-shadow: 0 7px 0 -2px var(--blue-color),
+    0 15px 0 -4px var(--red),
+    0 16px 10px -3px var(--blue-color);
 }
 
 .img-formated{
@@ -673,35 +673,64 @@ html::-webkit-scrollbar-thumb{
 @keyframes social3{
     from{height: 0rem;}
 }
-
+ 
+    .close-menu{
+        display: none;
+}
 
 @media (max-width: 800px){
-    h1 {
-        font-size: 4rem; 
+    html {
+        width: 100%;
+        zoom: 0%;
     }
-    
+
+    h1{
+        font-size: 3rem;
+    }
+
     h2{
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
     
     h3{
-        font-size: 3rem;
+        font-size: 2rem;
     }
-    
-    
+
     p{
-        font-size: 2rem;
-        font-family: 'Kanit', sans-serif !important;
+        font-size: 1rem;
     }
-    
-    a{
-        font-size: 2rem;
-        text-decoration: none;
+
+    .sidebar{
+        height: 5rem;
+        width: 5rem;
+
     }
-    
-    html {
-        width: 295.5%;
-        zoom: 0%;
+
+    .sidebar ul li{
+        display: none;
+    }
+
+    .sidebar #btn{
+        position: fixed;
+        color: var(--white-text);
+        top: 6px;
+        font-size:2.5rem ;
+        height: 1rem;
+        width: 1rem;
+        text-align: center;
+        line-height: 5rem;
+        cursor: pointer;
+        transform: translateX(-50%);
+    }
+
+    .sidebar.active{
+        width: 100%;
+        z-index: 1;
+        height: 100%;
+    }
+
+    .sidebar.active ul li{
+        display: inline;
     }
 
     .grid, .grid-projects{
@@ -710,10 +739,6 @@ html::-webkit-scrollbar-thumb{
 
     .wraper{
         width: 100%;
-    }
-
-    .contact-form{
-        max-width: 50rem;
     }
 
     .img-formated{
@@ -737,17 +762,20 @@ html::-webkit-scrollbar-thumb{
         width: 100%;
     }
 
-    .slide{
-        width: 100%;
-    }
-
     .main-content{
         width: 100%; 
         max-width: none;
     }
 
-    .slide{
-        width: 100%;
-       
+    @keyframes slide {
+        0%{
+            transform: translate3d(0, 0, 0);
+          }
+          50%{
+            transform: translate3d(-165rem, 0, 0);
+          }
+          100%{
+              transform: translate3d(0, 0, 0);
+          }
     }
 }
