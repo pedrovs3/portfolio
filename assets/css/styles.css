@@ -398,7 +398,7 @@ html::-webkit-scrollbar-thumb{
     gap: var(--gap);
 }
 
-.list li {
+.list li { 
     list-style: none;
 }
 
@@ -681,23 +681,22 @@ html::-webkit-scrollbar-thumb{
 @media (max-width: 800px){
     html {
         width: 100%;
-        zoom: 0%;
     }
 
     h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     h2{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
     
     h3{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .sidebar{
@@ -726,11 +725,11 @@ html::-webkit-scrollbar-thumb{
     .sidebar.active{
         width: 100%;
         z-index: 1;
-        height: 100%;
+        height: 100vh;
     }
 
     .sidebar.active ul li{
-        display: inline;
+        display: block;
     }
 
     .grid, .grid-projects{
@@ -748,6 +747,7 @@ html::-webkit-scrollbar-thumb{
     .flex{
         flex-direction: column;
         width: 100%;
+        gap: 5rem;
     }
 
     .form-group button{
@@ -765,6 +765,32 @@ html::-webkit-scrollbar-thumb{
     .main-content{
         width: 100%; 
         max-width: none;
+    }
+
+    .sobre{
+        max-width: 100%;
+    }
+
+    .grid-cursos{
+        max-width: 100%;
+    }
+
+    .list li button{
+        width: 10rem;
+        height: 5rem;
+    }
+
+    .form-group .underline{
+        width: 100%;
+        bottom: auto;
+    }
+
+    .form-group .underline-button{
+        width: 100%;
+    }
+
+    .form-group .underline-text{
+        width: 100%;
     }
 
     @keyframes slide {
