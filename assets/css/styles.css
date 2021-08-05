@@ -419,7 +419,7 @@ html::-webkit-scrollbar-thumb{
     border-radius: 15px;
     transform: translateY(-10px);
     box-shadow: 0 7px 0 -2px var(--blue-color),
-    0 15px 0 -4px var(--red),
+    0 15px 0 -4px var(--green-color),
     0 16px 10px -3px var(--blue-color);
 }
 
