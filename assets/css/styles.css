@@ -678,7 +678,7 @@ html::-webkit-scrollbar-thumb{
         display: none;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px), (prefers-color-scheme: dark){
     html {
         width: 100%;
     }
