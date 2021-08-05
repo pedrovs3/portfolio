@@ -782,6 +782,23 @@ html::-webkit-scrollbar-thumb{
         width: 100%;
     }
 
+    .secondary-bg{
+        background-color: var(--secondary-color);
+        color: var(--white-text);
+    }
+
+    .invert-bg{
+        background: url(/assets/img/bg-test2.jpg);
+        background-size: cover;
+        background-position: center center;
+        color: var(--white-text);
+    }
+
+    .alternative-bg{
+        background-color: var(--bg-color);
+        color: var(--white-text);
+    }
+
     .main-content{
         width: 100%; 
         max-width: none;
