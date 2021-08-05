@@ -8,6 +8,7 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    background-color: var(--bg-color);
 }
 
 body{
@@ -20,10 +21,10 @@ body{
     --bg-color: #121212;
     --secondary-color:#181818;
     --grey:#424242;
-    --blue-color: #F2543C;/*00FFFF EC4F39*/
+    --blue-color: #00FFFF;/*EC4F39 F2543C*/
     --white-text: rgb(238, 238, 238);
     --green-color:#CCFF66;
-    --orange:#ff5522;/*FFCC00*/
+    --blue-two:#7BCBF1;/*ff5522 FFCC00*/
     --red:#FF0000;
     --gap: 3rem;
 }
@@ -42,7 +43,7 @@ span{
 }
 
 h1 {
-    font-size: 8rem; 
+    font-size: 13rem; 
 }
 
 h2{
@@ -200,7 +201,7 @@ html::-webkit-scrollbar-thumb{
 
 .sidebar ul li .bx-search{
     z-index: 99;
-    color: var(--orange);
+    color: var(--blue-two);
     font-size: 2.2rem;
     transition:all 0.5s ease-in-out;
 }
@@ -210,7 +211,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .sidebar ul li a{
-    color:var(--orange);
+    color:var(--blue-two);
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -226,7 +227,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .sidebar ul li a:hover:hover{
-        box-shadow:inset 0 0 1.3rem #a1a1a1;
+        box-shadow:inset 0 0 1.3rem var(--blue-two);
 }
 
 .sidebar ul li i{
@@ -311,14 +312,14 @@ html::-webkit-scrollbar-thumb{
 }
 
 .main-bg{
-    background:url(/assets/img/bg-test.jpg);
+    background:url(/assets/img/bg-test1.jpg);
     background-size: cover;
     background-position: center center;
     color: var(--white-text);
 }
 
 .invert-bg{
-    background: url(/assets/img/bg-test2.jpg);
+    background: url(/assets/img/invert-bg.svg);
     background-size: cover;
     background-position: center center;
     color: var(--white-text);
@@ -330,7 +331,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .secondary-bg{
-    background-color: var(--secondary-color);
+    background-color: #202724;
     color: var(--white-text);
 }
 
@@ -482,7 +483,7 @@ html::-webkit-scrollbar-thumb{
 .rubber-letter:hover{
     display:inline-block;
     animation: rubberLetter 0.8s ease-in-out 1;
-    color: var(--orange);
+    color: var(--blue-two);
     animation-fill-mode: both;
 }
 
@@ -663,7 +664,7 @@ html::-webkit-scrollbar-thumb{
 
 @keyframes social{
     0%{color:var(--secondary-color);}
-    100%{color: var(--orange);}
+    100%{color: var(--blue-two);}
 }
 
 @keyframes social2 {
