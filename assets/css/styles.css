@@ -71,6 +71,10 @@ p{
     font-family: 'Kanit', sans-serif !important;
 }
 
+.font-p-maior{
+    font-size: 2.7rem;
+}
+
 a{
     font-size: 2rem;
     text-decoration: none;
@@ -697,6 +701,10 @@ html::-webkit-scrollbar-thumb{
     }
 
     p{
+        font-size: 1.5rem;
+    }
+
+    .font-p-maior{
         font-size: 1.5rem;
     }
 
