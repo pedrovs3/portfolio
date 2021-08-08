@@ -9,6 +9,7 @@ html{
     font-size: 62.5%;
     scroll-behavior: smooth;
     background-color: var(--bg-color);
+    zoom: 100%;
 }
 
 body{
