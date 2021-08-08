@@ -339,25 +339,31 @@ html::-webkit-scrollbar-thumb{
     color: var(--white-text);
 }
 
-.slide{
-    background-image: url(/assets/img/colagem-slider.png);
-    height: 40rem;
-    background-size: cover;
-    width: 190rem;
-    animation:slide 30s linear infinite;
-    animation-timing-function: linear;
-}
-
-.wraper{
+.galeria{
+    position: relative;
+    display: flex;
     overflow: hidden;
     margin-top: 5rem;
-    max-width: 90rem;
+    width: 90rem;
+    height: 50rem;
     border-radius: 12px;
     border: 1px solid var(--blue-color);
     transition: all 1s ease-in-out;
 }
 
-.wraper:hover{
+.foto{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    animation: slider-transition 15s infinite;
+}
+
+.foto:nth-child(2){ 
+    animation-delay: 7.5s;
+}
+
+.galeria:hover{
     box-shadow: 0rem 0rem 4rem 0rem var(--blue-color);
 }
 
@@ -625,15 +631,13 @@ html::-webkit-scrollbar-thumb{
     transform: scaleX(1);
 }
 
-@keyframes slide{
-    0%{
-      transform: translate3d(0, 0, 0);
+@keyframes slider-transition {
+    25%{
+        opacity: 1;
     }
-    50%{
-      transform: translate3d(-100rem, 0, 0);
-    }
-    100%{
-        transform: translate3d(0, 0, 0);
+
+    75%{
+        opacity: 0;
     }
 }
 
@@ -683,7 +687,7 @@ html::-webkit-scrollbar-thumb{
         display: none;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1000px){
     html {
         width: 100%;
     }
@@ -767,9 +771,9 @@ html::-webkit-scrollbar-thumb{
         font-size: 2rem;
     }
 
-    .wraper{
-        width: auto;
-        height: auto;
+    .galeria{
+        width: 100%;
+        height: 200px;
     }
 
     .img-formated{
@@ -845,15 +849,4 @@ html::-webkit-scrollbar-thumb{
         width: 100%;
     }
 
-    @keyframes slide {
-        0%{
-            transform: translate3d(0, 0, 0);
-          }
-          50%{
-            transform: translate3d(-165rem, 0, 0);
-          }
-          100%{
-              transform: translate3d(0, 0, 0);
-          }
-    }
 }
