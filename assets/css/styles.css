@@ -865,4 +865,8 @@ html::-webkit-scrollbar-thumb{
     .form-group .underline{
         width: 31.5%;
     }
+
+    .form-group .underline-button{
+        display: none;
+    }
 }
