@@ -688,7 +688,7 @@ html::-webkit-scrollbar-thumb{
         display: none;
 }
 
-@media (max-width: 100px){
+@media (max-width: 1000px){
     html {
         width: 100%;
     }
@@ -850,18 +850,19 @@ html::-webkit-scrollbar-thumb{
         width: 100%;
     }
 
-    @media (max-width:1400px) {
-        .form-group .underline{
-            width: 100%;
-            bottom: auto;
-        }
-    
-        .form-group .underline-button{
-            display: none;
-        }
-    
-        .form-group .underline-text{
-            width: 100%;
-        }
+}
+
+@media (max-width:1400px) {
+    .contact-form{
+        max-width: 1200px;
+        overflow: hidden;
+    }
+
+    .main-content{
+        max-width: 1200px;
+    }
+
+    .form-group .underline{
+        width: 31.5%;
     }
 }
