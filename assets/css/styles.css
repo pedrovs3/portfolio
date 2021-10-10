@@ -82,12 +82,12 @@ a{
 }
 
 html::-webkit-scrollbar{
-    width: 1rem;
+    width: 0.8rem;
     background-color: var(--bg-color);
 }
 
 html::-webkit-scrollbar-thumb{
-    background-image: linear-gradient(var(--green-color), var(--blue-color));
+    background-color: var(--blue-two);
     border-radius: 10rem;
 }
 
@@ -336,7 +336,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .secondary-bg{
-    background-color: #202724;
+    background-color: #242420;
     color: var(--white-text);
 }
 
