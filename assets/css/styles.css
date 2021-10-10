@@ -450,19 +450,19 @@ html::-webkit-scrollbar-thumb{
 
 .social {
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 0rem;
+    left: 1rem;
 }
 
 .social .flex-social{
     max-width: 5rem;
-
 }
 
 .sidebar.active .social{
     position: absolute;
     color: var(--white-text);
     bottom: 0.5rem;
-    left: 23%;
+    left: -0.5%;
 }
 
 .sidebar.active .flex-social{
@@ -680,7 +680,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 @keyframes social2 {
-    from{height: 10rem; width: 5rem;}
+    from{left: 2rem;}
+    to {left: 0;}
 }
 
 @keyframes social3{
