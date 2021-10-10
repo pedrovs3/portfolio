@@ -88,7 +88,7 @@ html::-webkit-scrollbar{
 
 html::-webkit-scrollbar-thumb{
     background-image: linear-gradient(var(--green-color), var(--blue-color));
-    border-radius:10rem;
+    border-radius: 10rem;
 }
 
 .sidebar {
@@ -365,7 +365,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .galeria:hover{
-    box-shadow: 0rem 0rem 4rem 0rem var(--blue-color);
+    box-shadow: 0rem 0rem 1rem 0rem var(--blue-color);
 }
 
 .main-content {
@@ -420,7 +420,10 @@ html::-webkit-scrollbar-thumb{
     cursor: pointer;
     background-color: var(--secondary-color);
     color:var(--white-text);
-    border-radius:12px ;
+    border-bottom-right-radius:6px;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
     border: 1px solid var(--blue-color);
     transition: all .4s;
 }
@@ -491,7 +494,7 @@ html::-webkit-scrollbar-thumb{
     transition: all 0.5s ease-in-out;
 }
 
-.rubber-letter:hover{
+.rubber-letter:hover {
     display:inline-block;
     animation: rubberLetter 0.8s ease-in-out 1;
     color: var(--blue-two);
