@@ -416,7 +416,7 @@ html::-webkit-scrollbar-thumb{
 
 .list li button{
     width: 20rem;
-    height: 8rem;
+    height: 6.5rem;
     cursor: pointer;
     background-color: var(--secondary-color);
     color:var(--white-text);
@@ -490,16 +490,19 @@ html::-webkit-scrollbar-thumb{
     animation-duration: 1.5s;
 }
 
- .rubber-letter{
-    transition: all 0.5s ease-in-out;
+.rubber-letter {
+    transition: 0.3s ease-in-out color; }
+  
+.animation {
+    animation:  1s ease-in-out forwards rubber;
+    display: inline-block;
+    cursor: pointer;
 }
-
-.rubber-letter:hover {
-    display:inline-block;
-    animation: rubberLetter 0.8s ease-in-out 1;
+  
+.rubber-letter:hover{
     color: var(--blue-two);
-    animation-fill-mode: both;
 }
+  
 
 .contact-form .form-grid {
     border: none;
@@ -645,30 +648,22 @@ html::-webkit-scrollbar-thumb{
     }
 }
 
-@keyframes rubberLetter{
-    from{
-        transform: scale3d(1,1,1);
-    }
-    30%{
-        transform: scale3d(1.25,0.75,1);
-    }
-    40%{
-        transform: scale3d(0.75,1.25,1);
-    }
-    50%{
-        transform: scale3d(1.15,0.85,1);
-    }
-    65%{
-        transform: scale3d(0.95,1.05,1);
-    }
-    75%{
-        transform: scale3d(1.05,0.95,1);
-    }
-    to{
-        transform: scale3d(1,1,1);
-    }
-}
-
+@keyframes rubber {
+    0% {
+      transform: scale3d(1, 1, 1); }
+    30% {
+      transform: scale3d(1.25, 0.75, 1); }
+    40% {
+      transform: scale3d(0.75, 1.25, 1); }
+    50% {
+      transform: scale3d(1.15, 0.85, 1); }
+    65% {
+      transform: scale3d(0.95, 1.05, 1); }
+    75% {
+      transform: scale3d(1.05, 0.95, 1); }
+    100% {
+      transform: scale3d(1, 1, 1); } }
+  
 @keyframes perfil {
     from {left: -20rem;}
     to {left: 0rem;}
@@ -821,8 +816,11 @@ html::-webkit-scrollbar-thumb{
     }
 
     .main-content{
-        width: 100%; 
-        max-width: none;
+        width: 100vw;
+    }
+
+    .main-content h1{
+        width: max-content;
     }
 
     .sobre{
