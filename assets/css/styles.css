@@ -403,8 +403,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 .grid-projects {
-    display: grid;
-    grid-template-columns: repeat(2, 20rem);
+    display: flex;
+    flex-wrap:wrap;
     justify-content: center;
     padding-top: 5rem;
     gap: var(--gap);
