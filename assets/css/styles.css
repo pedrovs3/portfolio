@@ -357,11 +357,15 @@ html::-webkit-scrollbar-thumb{
     height: 100%;
     position: absolute;
     opacity: 0;
-    animation: slider-transition 15s infinite;
+    animation: slider-transition 22.5s infinite;
 }
 
 .foto:nth-child(2){ 
     animation-delay: 7.5s;
+}
+
+.foto:nth-child(3){
+    animation-delay: 14s;
 }
 
 .galeria:hover{
@@ -639,7 +643,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 @keyframes slider-transition {
-    25%{
+    10%{
         opacity: 1;
     }
 
