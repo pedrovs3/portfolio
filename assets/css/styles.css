@@ -857,3 +857,22 @@ html::-webkit-scrollbar-thumb{
     }
 
 }
+
+@media (max-width:1400px) {
+    .contact-form{
+        max-width: 1200px;
+        overflow: hidden;
+    }
+
+    .main-content{
+        max-width: 1200px;
+    }
+
+    .form-group .underline{
+        width: 31.5%;
+    }
+
+    .form-group .underline-button{
+        display: none;
+    }
+}
